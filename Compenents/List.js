@@ -31,7 +31,7 @@ export default class List extends Component {
         <h1>Lista de usuarios</h1>
         <ul>
           {this.state.data.map((item, index) => {
-            return <li>{item.user}</li>;
+            return <li key={index}>{item.user}</li>;
           })}
         </ul>
       </div>
